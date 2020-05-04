@@ -13,18 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Solutions">
+      <UniqueIdentifier>{ef8752de-3522-4495-ad98-2f46383527a7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prob1929.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Solutions\Prob1929.cpp">
+      <Filter>Solutions</Filter>
+    </ClCompile>
+    <ClCompile Include="Solutions\Prob1629.cpp">
+      <Filter>Solutions</Filter>
+    </ClCompile>
+    <ClCompile Include="Solutions\Prob2747.cpp">
+      <Filter>Solutions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Prob1929.h">
-      <Filter>소스 파일</Filter>
+    <ClInclude Include="Solutions\Prob1929.h">
+      <Filter>Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Prob1629.h">
+      <Filter>Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Prob2747.h">
+      <Filter>Solutions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

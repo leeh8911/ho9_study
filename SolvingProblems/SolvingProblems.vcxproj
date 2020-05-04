@@ -99,7 +99,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;TEST_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -141,10 +141,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Prob1929.cpp" />
+    <ClCompile Include="Solutions\Prob1629.cpp" />
+    <ClCompile Include="Solutions\Prob1929.cpp" />
+    <ClCompile Include="Solutions\Prob2747.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Prob1929.h" />
+    <ClInclude Include="Solutions\Prob1629.h" />
+    <ClInclude Include="Solutions\Prob1929.h" />
+    <ClInclude Include="Solutions\Prob2747.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
