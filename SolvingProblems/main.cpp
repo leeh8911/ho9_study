@@ -6,6 +6,8 @@
 #include "./Solutions/Prob1629.h"
 #include "./Solutions/Prob2747.h"
 
+#include "./SamsungSWTestSolutions/SamsungProb17140.h"
+
 using namespace std;
 
 

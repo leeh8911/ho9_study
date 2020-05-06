@@ -2,6 +2,14 @@
 
 문제 풀이 : [백준 링크](https://www.acmicpc.net/)
 
+
+
+##삼전 SW 역량 테스트 기출들
+
+[문제집 링크](https://www.acmicpc.net/workbook/view/1152)
+
+
+
 ## 1주차 스터디(2020-05-03)
 
 - 다음 시간 -> *02. 정렬* 부터 시작합니다~
