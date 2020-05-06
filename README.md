@@ -8,7 +8,9 @@
 
 [문제집 링크](https://www.acmicpc.net/workbook/view/1152)
 
-
+* 문제풀이
+  * [이차원 배열과 연산](https://www.acmicpc.net/problem/17140) : 
+    * 배열의 연산 방법을 R, C로 나눠서 해보려 했지만, 그렇게 하는 것 보다 transpose 함수를 활용하는 것이 더 빠르게 될 것같음!
 
 ## 1주차 스터디(2020-05-03)
 
