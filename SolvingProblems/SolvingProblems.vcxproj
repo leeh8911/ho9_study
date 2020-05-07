@@ -141,11 +141,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SamsungSWTestSolutions\SamsungProb17140.cpp" />
     <ClCompile Include="Solutions\Prob1629.cpp" />
     <ClCompile Include="Solutions\Prob1929.cpp" />
     <ClCompile Include="Solutions\Prob2747.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="SamsungSWTestSolutions\SamsungProb17140.h" />
     <ClInclude Include="Solutions\Prob1629.h" />
     <ClInclude Include="Solutions\Prob1929.h" />
     <ClInclude Include="Solutions\Prob2747.h" />

@@ -17,7 +17,9 @@ int main(void)
 
 	//BK_Prob_1629();
 
-	BK_Prob_2747();
+	//BK_Prob_2747();
+
+	Samsung_Prob_17140();
 
 	return 0;
 }
