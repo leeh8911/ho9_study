@@ -145,12 +145,16 @@
     <ClCompile Include="Solutions\Prob1629.cpp" />
     <ClCompile Include="Solutions\Prob1929.cpp" />
     <ClCompile Include="Solutions\Prob2747.cpp" />
+    <ClCompile Include="Solutions\Prob2750.cpp" />
+    <ClCompile Include="Solutions\Prob2751.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SamsungSWTestSolutions\SamsungProb17140.h" />
     <ClInclude Include="Solutions\Prob1629.h" />
     <ClInclude Include="Solutions\Prob1929.h" />
     <ClInclude Include="Solutions\Prob2747.h" />
+    <ClInclude Include="Solutions\Prob2750.h" />
+    <ClInclude Include="Solutions\Prob2751.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

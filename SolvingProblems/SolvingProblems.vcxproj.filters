@@ -36,6 +36,12 @@
     <ClCompile Include="SamsungSWTestSolutions\SamsungProb17140.cpp">
       <Filter>SamsungSWTestSolutions</Filter>
     </ClCompile>
+    <ClCompile Include="Solutions\Prob2750.cpp">
+      <Filter>Solutions</Filter>
+    </ClCompile>
+    <ClCompile Include="Solutions\Prob2751.cpp">
+      <Filter>Solutions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solutions\Prob1929.h">
@@ -49,6 +55,12 @@
     </ClInclude>
     <ClInclude Include="SamsungSWTestSolutions\SamsungProb17140.h">
       <Filter>SamsungSWTestSolutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Prob2750.h">
+      <Filter>Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Prob2751.h">
+      <Filter>Solutions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

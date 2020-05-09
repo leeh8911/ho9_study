@@ -60,7 +60,7 @@ int main(void)
 #else
 	int i, j, k;
 	int ar_in[3][3];
-	cin >> i >> j >> k >> endl;
+	cin >> i >> j >> k;
 #endif
 	tSPARSE_MATRIX_HANDLER mat(3, 3, ar_in);
 

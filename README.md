@@ -36,6 +36,7 @@
 * 문제풀이
   * [수 정렬하기](https://www.acmicpc.net/problem/2750)
   * [수 정렬하기2](https://www.acmicpc.net/problem/2751)
+    * 개빡치네.. 코드 리팩터링 다시 해봐야 할듯 ㅠㅜ
   * [좌표 정렬하기2](https://www.acmicpc.net/problem/11651)
   * [나이순 정렬](https://www.acmicpc.net/problem/10814)
   * [국영수](https://www.acmicpc.net/problem/10825)

@@ -5,6 +5,8 @@
 #include "./Solutions/Prob1929.h"
 #include "./Solutions/Prob1629.h"
 #include "./Solutions/Prob2747.h"
+#include "./Solutions/Prob2750.h"
+#include "./Solutions/Prob2751.h"
 
 #include "./SamsungSWTestSolutions/SamsungProb17140.h"
 
@@ -19,7 +21,11 @@ int main(void)
 
 	//BK_Prob_2747();
 
-	Samsung_Prob_17140();
+	//BK_Prob_2750();
+	
+	BK_Prob_2751();
+
+	//Samsung_Prob_17140();
 
 	return 0;
 }
