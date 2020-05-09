@@ -34,12 +34,12 @@
   * Quick sort
   * Radix sort
 * 문제풀이
-  * 2750
-  * 2751
-  * 11651
-  * 11652(특수)
-  * 10814
-  * 10825
-  * 10989 (특수)
-  * 11004
+  * [수 정렬하기](https://www.acmicpc.net/problem/2750)
+  * [수 정렬하기2](https://www.acmicpc.net/problem/2751)
+  * [좌표 정렬하기2](https://www.acmicpc.net/problem/11651)
+  * [나이순 정렬](https://www.acmicpc.net/problem/10814)
+  * [국영수](https://www.acmicpc.net/problem/10825)
+  * [수 정렬하기3](https://www.acmicpc.net/problem/10989)
+  * [K번째 수](https://www.acmicpc.net/problem/11004)
+  * [카드](https://www.acmicpc.net/problem/11652)
 * 다음 시간 -> LinkedList!!

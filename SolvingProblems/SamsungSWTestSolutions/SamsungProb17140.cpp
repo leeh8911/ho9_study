@@ -29,7 +29,6 @@ public:
 	int GetMaxCol();
 
 private:
-	void fnc();
 
 }SPARSE_MATRIX_HANDLER;
 
