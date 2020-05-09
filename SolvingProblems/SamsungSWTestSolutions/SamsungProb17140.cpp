@@ -24,7 +24,12 @@ public:
 	void Transpose();
 	void Print();
 	void Calculate();
+
+	int GetMaxRow();
+	int GetMaxCol();
+
 private:
+	void fnc();
 
 }SPARSE_MATRIX_HANDLER;
 
@@ -65,6 +70,8 @@ int main(void)
 	mat.Transpose();
 
 	mat.Print();
+
+	mat.Calculate();
 
 	return 0;
 }
@@ -126,25 +133,80 @@ void tSPARSE_MATRIX_HANDLER::Transpose()
 void tSPARSE_MATRIX_HANDLER::Calculate()
 {
 	SPARSE_MATRIX* temp_mat = mat;
+	int max_row = this->GetMaxRow();
+	int max_col = this->GetMaxCol();
+
+	int** values = new int*[max_row];
+	int** counts = new int*[max_row];
+	for (int i = 0; i < max_row; i++)
+	{
+		values[i] = new int[max_col];
+		counts[i] = new int[max_col];
+
+		memset(values[i], 0, sizeof(int) * max_col);
+		memset(counts[i], 0, sizeof(int) * max_col);
+	}
+
+
+	for (int i = 0; i < this->length; i++)
+	{
+		for (int j = 0; j < max_col; j++)
+		{
+			if (values[temp_mat->row][j] == 0)
+			{
+				values[temp_mat->row][j] = temp_mat->val;
+				counts[temp_mat->row][j] = 1;
+				break;
+			}
+			else if (values[temp_mat->row][j] == temp_mat->val)
+			{
+				counts[temp_mat->row][j] += 1;
+				break;
+			}
+		}
+
+		temp_mat = temp_mat->next_mat;
+	}
+
+	for (int row = 0; row < max_row; row++)
+	{
+		for (int col = 0; col < max_col; col++)
+		{
+		}
+	}
+
+#ifdef TEST_MODE
+	cout << "/******ValueMatStart*******/" << endl;
+	
+	for (int row = 0; row < max_row; row++)
+	{
+		cout << "[";
+		for (int col = 0; col < max_col; col++)
+		{
+			cout << values[row][col] << " ";
+		}
+		cout << "]" << endl;
+	}
+	cout << "/******ValueMatEnd*******/" << endl;
+	cout << "/******CountMatStart*******/" << endl;
+	for (int row = 0; row < max_row; row++)
+	{
+		cout << "[";
+		for (int col = 0; col < max_col; col++)
+		{
+			cout << counts[row][col] << " ";
+		}
+		cout << "]" << endl;
+	}
+	cout << "/******CountMatEnd*******/" << endl;
+#endif
 
 }
 	void tSPARSE_MATRIX_HANDLER::Print()
 	{
 		SPARSE_MATRIX* temp_mat = mat;
-	int max_row = 0, max_col = 0;
+	int max_row = this->GetMaxRow(), max_col = this->GetMaxCol();
 
-	for (int i = 0; i < this->length; i++)
-	{
-		if (max_row < temp_mat->row)
-			max_row = temp_mat->row;
-
-		if (max_col < temp_mat->col)
-			max_col = temp_mat->col;
-
-		temp_mat = temp_mat->next_mat;
-	}
-	max_row += 1;
-	max_col += 1;
 
 	int** ar = (int**)malloc(sizeof(int) * max_row);
 	for (int i = 0; i < max_row; i++)
@@ -168,3 +230,35 @@ void tSPARSE_MATRIX_HANDLER::Calculate()
 	}
 	cout << "/************/" << endl;
 }
+
+
+	int tSPARSE_MATRIX_HANDLER::GetMaxRow()
+	{
+		SPARSE_MATRIX* temp_mat = mat;
+		int max_row = 0;
+
+		for (int i = 0; i < this->length; i++)
+		{
+			if (max_row < temp_mat->row)
+				max_row = temp_mat->row;
+
+			temp_mat = temp_mat->next_mat;
+		}
+
+		return max_row + 1;
+	}
+	int tSPARSE_MATRIX_HANDLER::GetMaxCol()
+	{
+		SPARSE_MATRIX* temp_mat = mat;
+		int max_col = 0;
+
+		for (int i = 0; i < this->length; i++)
+		{
+			if (max_col < temp_mat->col)
+				max_col = temp_mat->col;
+
+			temp_mat = temp_mat->next_mat;
+		}
+
+		return max_col + 1;
+	}
