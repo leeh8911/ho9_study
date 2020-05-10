@@ -48,7 +48,9 @@
   * [나이순 정렬](https://www.acmicpc.net/problem/10814)
     * String과 Vector를 적절히 활용해야 함
     * 입력은 받기 어려우니(char -> string변환 필요) `std::cin`으로 받고, 속도가 빨라야 하기 때문에 출력은 `printf`로 한다.
-  * [국영수](https://www.acmicpc.net/problem/10825)
+  * [국영수](https://www.acmicpc.net/problem/10825)3
+    * String 사전순으로 만들기를 고민해봐야 함
+    * str1.compare(str2) < 0 --> str1이 str2보다 사전에서 먼저 나옴!(str.compare(str2) = 0이면 두 str은 서로 같음)
   * [수 정렬하기3](https://www.acmicpc.net/problem/10989)
   * [K번째 수](https://www.acmicpc.net/problem/11004)
   * [카드](https://www.acmicpc.net/problem/11652)

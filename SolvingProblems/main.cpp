@@ -9,6 +9,7 @@
 #include "./Solutions/Prob2751.h"
 #include "./Solutions/Prob11651.h"
 #include "./Solutions/Prob10814.h"
+#include "./Solutions/Prob10825.h"
 
 #include "./SamsungSWTestSolutions/SamsungProb17140.h"
 
@@ -29,7 +30,9 @@ int main(void)
 
 	//BK_Prob_11651(); //O
 
-	BK_Prob_10814();
+	//BK_Prob_10814(); //O
+	
+	BK_Prob_10825();
 
 	//Samsung_Prob_17140();
 
