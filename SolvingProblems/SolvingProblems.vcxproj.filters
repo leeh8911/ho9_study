@@ -42,6 +42,9 @@
     <ClCompile Include="Solutions\Prob2751.cpp">
       <Filter>Solutions</Filter>
     </ClCompile>
+    <ClCompile Include="Solutions\Prob11651.cpp">
+      <Filter>Solutions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solutions\Prob1929.h">
@@ -60,6 +63,9 @@
       <Filter>Solutions</Filter>
     </ClInclude>
     <ClInclude Include="Solutions\Prob2751.h">
+      <Filter>Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Prob11651.h">
       <Filter>Solutions</Filter>
     </ClInclude>
   </ItemGroup>

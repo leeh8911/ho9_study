@@ -35,9 +35,16 @@
   * Radix sort
 * 문제풀이
   * [수 정렬하기](https://www.acmicpc.net/problem/2750)
+    * bubble, selection, insertion, merge, quick sort로 각각 풀어서 해결함
+    * 완료
   * [수 정렬하기2](https://www.acmicpc.net/problem/2751)
     * 개빡치네.. 코드 리팩터링 다시 해봐야 할듯 ㅠㅜ
+    * "수 정렬하기"문제에서 활용된 코드를 적용해보았지만, 메모리와 수행시간이 초과됨
+    * 
   * [좌표 정렬하기2](https://www.acmicpc.net/problem/11651)
+    * STL sort, qsort모두 적용해봤지만 시간 초과 뜸
+    * 문제는 sort, qsort가 아니라 cin, cout이 문제임 (scanf, printf를 쓰는 습관 ㄱㄱ)
+    * 완료
   * [나이순 정렬](https://www.acmicpc.net/problem/10814)
   * [국영수](https://www.acmicpc.net/problem/10825)
   * [수 정렬하기3](https://www.acmicpc.net/problem/10989)
