@@ -46,6 +46,8 @@
     * 문제는 sort, qsort가 아니라 cin, cout이 문제임 (scanf, printf를 쓰는 습관 ㄱㄱ)
     * 완료
   * [나이순 정렬](https://www.acmicpc.net/problem/10814)
+    * String과 Vector를 적절히 활용해야 함
+    * 입력은 받기 어려우니(char -> string변환 필요) `std::cin`으로 받고, 속도가 빨라야 하기 때문에 출력은 `printf`로 한다.
   * [국영수](https://www.acmicpc.net/problem/10825)
   * [수 정렬하기3](https://www.acmicpc.net/problem/10989)
   * [K번째 수](https://www.acmicpc.net/problem/11004)
