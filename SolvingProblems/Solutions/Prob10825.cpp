@@ -54,7 +54,7 @@ int main(void)
 {
 	int n = 0;
 
-#ifdef TEST_MODE1
+#ifdef TEST_MODE
 	n = 12;
 	STUDENT p[12] = {{"Junkyu"	,50, 60, 100,  },
 	{"Sangkeun",80, 60, 50 ,},
