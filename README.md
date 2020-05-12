@@ -55,6 +55,7 @@
     * String 사전순으로 만들기를 고민해봐야 함
     * str1.compare(str2) < 0 --> str1이 str2보다 사전에서 먼저 나옴!(str.compare(str2) = 0이면 두 str은 서로 같음)
   * [수 정렬하기3](https://www.acmicpc.net/problem/10989)
+    * 메모리, 시간초과 이슈! (현재 방식은 시간초과가 크리티컬!)
   * [K번째 수](https://www.acmicpc.net/problem/11004)
   * [카드](https://www.acmicpc.net/problem/11652)
 * 다음 시간 -> LinkedList!!

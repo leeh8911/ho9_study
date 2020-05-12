@@ -99,7 +99,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;TEST_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;TEST_MODE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -144,6 +144,7 @@
     <ClCompile Include="SamsungSWTestSolutions\SamsungProb17140.cpp" />
     <ClCompile Include="Solutions\Prob10814.cpp" />
     <ClCompile Include="Solutions\Prob10825.cpp" />
+    <ClCompile Include="Solutions\Prob10989.cpp" />
     <ClCompile Include="Solutions\Prob11651.cpp" />
     <ClCompile Include="Solutions\Prob1629.cpp" />
     <ClCompile Include="Solutions\Prob1929.cpp" />
@@ -155,6 +156,7 @@
     <ClInclude Include="SamsungSWTestSolutions\SamsungProb17140.h" />
     <ClInclude Include="Solutions\Prob10814.h" />
     <ClInclude Include="Solutions\Prob10825.h" />
+    <ClInclude Include="Solutions\Prob10989.h" />
     <ClInclude Include="Solutions\Prob11651.h" />
     <ClInclude Include="Solutions\Prob1629.h" />
     <ClInclude Include="Solutions\Prob1929.h" />
