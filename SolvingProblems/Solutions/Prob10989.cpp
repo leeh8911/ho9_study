@@ -10,6 +10,13 @@
 #include <time.h>
 #endif
 
+#define SWAP(a, b) \
+do{\
+UNIQUE_SET temp = a;\
+a = b;\
+b = temp;\
+}while(0);
+
 using namespace std;
 
 typedef struct tUNIQUE_SET
@@ -17,6 +24,45 @@ typedef struct tUNIQUE_SET
 	int val;
 	int count;
 }UNIQUE_SET;
+
+
+static inline int Partition(vector <UNIQUE_SET> vec, int left, int right)
+{
+	int pivot_index = left;
+	UNIQUE_SET pivot = vec.at(pivot_index);
+	int low = left + 1;
+	int high = right;
+
+	while (low <= high)
+	{
+
+		while (pivot.val > vec.at(low).val && low <= right)
+		{
+			low++;
+		}
+
+		while (pivot.val < vec.at(pivot_index).val && high >= (left + 1))
+		{
+			high--;
+		}
+		if (low <= high)
+		{
+			SWAP(vec[low], vec[high]);
+		}
+	}
+	SWAP(vec[pivot_index], vec[high]);
+	return high;
+}
+
+static inline void CustomQuickSort(vector <UNIQUE_SET> vec, int left, int right)
+{
+	if (left <= right)
+	{
+		int pivot = Partition(vec, left, right);
+		CustomQuickSort(vec, left, pivot - 1);
+		CustomQuickSort(vec, pivot + 1, right);
+	}
+}
 
 inline int cmp_sort_10989(UNIQUE_SET first, UNIQUE_SET last)
 {
@@ -74,8 +120,7 @@ int main(void)
 	}
 #endif
 
-	sort(unique_arr.begin(), unique_arr.end(), cmp_sort_10989);
-
+	CustomQuickSort(unique_arr, 0, unique_arr.size());
 	int m = unique_arr.size();
 	string s;
 	for (int i = 0; i < m; i++)

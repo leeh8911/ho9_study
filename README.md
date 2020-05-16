@@ -59,3 +59,11 @@
   * [K번째 수](https://www.acmicpc.net/problem/11004)
   * [카드](https://www.acmicpc.net/problem/11652)
 * 다음 시간 -> LinkedList!!
+
+
+
+# #3주차 스터디(2020-05-16)
+
+* 담주에는 스택, 큐
+* 문제풀이
+  * 3. 링크드리스트 문제(5)번 풀기!

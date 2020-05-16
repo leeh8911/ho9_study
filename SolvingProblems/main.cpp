@@ -14,6 +14,7 @@
 
 #include "./SamsungSWTestSolutions/SamsungProb17140.h"
 
+#include "Example/LinkedListProb.h"
 using namespace std;
 
 
@@ -35,8 +36,9 @@ int main(void)
 	
 	//BK_Prob_10825(); // 0
 
-	BK_Prob_10989();
+	//BK_Prob_10989();
 
+	linked_list_main();
 
 	//Samsung_Prob_17140();
 

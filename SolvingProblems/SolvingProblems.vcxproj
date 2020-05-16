@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Example\LinkedListProb.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SamsungSWTestSolutions\SamsungProb17140.cpp" />
     <ClCompile Include="Solutions\Prob10814.cpp" />
@@ -153,6 +154,7 @@
     <ClCompile Include="Solutions\Prob2751.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Example\LinkedListProb.h" />
     <ClInclude Include="SamsungSWTestSolutions\SamsungProb17140.h" />
     <ClInclude Include="Solutions\Prob10814.h" />
     <ClInclude Include="Solutions\Prob10825.h" />

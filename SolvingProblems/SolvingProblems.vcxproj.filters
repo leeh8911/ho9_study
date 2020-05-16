@@ -19,6 +19,9 @@
     <Filter Include="SamsungSWTestSolutions">
       <UniqueIdentifier>{6dc9a1a7-bb49-4b0c-95a1-70a80ec6d951}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Example">
+      <UniqueIdentifier>{80bc03e8-7377-4752-b856-91d3202f9404}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -54,6 +57,9 @@
     <ClCompile Include="Solutions\Prob10989.cpp">
       <Filter>Solutions</Filter>
     </ClCompile>
+    <ClCompile Include="Example\LinkedListProb.cpp">
+      <Filter>Example</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solutions\Prob1929.h">
@@ -85,6 +91,9 @@
     </ClInclude>
     <ClInclude Include="Solutions\Prob10989.h">
       <Filter>Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Example\LinkedListProb.h">
+      <Filter>Example</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
