@@ -62,8 +62,35 @@
 
 
 
-# #3주차 스터디(2020-05-16)
+## 3주차 스터디(2020-05-16)
 
 * 담주에는 스택, 큐
 * 문제풀이
   * 3. 링크드리스트 문제(5)번 풀기!
+
+
+
+## 4주차 스터디(2020-05-24)
+
+* 인트로
+  * 링크드 리스트로 하면 효율적으로 개발 가능.
+  * ADT -> Abstract Data Type(Structure) 추상화된 자료 구조?
+* 스택
+  * 먼저 들어간 것이 나중에 나오는 구조(Last-in, First-out)
+  * 일종의 초코볼 통
+  * 기본 연산 push, pop, peek(별로 사용x)
+  * 스택이 활용되기 좋은 문제는 "계산기 구현"
+  * 연산 형태(infix, prefix, postfix) prefix, postfix는 컴퓨터 연산에 유리, infix는 사람이 보기 좋은 연산 포멧?
+* 큐
+  * 일종의 대기열(First-in, First-out)
+  * 기본 연산 Enqueue, Dequeue, peek
+  * Front에서 값이 빠지고, Rear에서 값이 들어온다.
+  * 덱(deque, 양방향으로 넣고 빼기가 가능)
+* 문제풀이
+  * [스택, 10828](https://www.acmicpc.net/problem/10828)
+  * [스택, 괄호, 9012](https://www.acmicpc.net/problem/9012)
+  * [큐, 10845](https://www.acmicpc.net/problem/10845)
+  * [stack, challenge, 쇠막대기](https://www.acmicpc.net/problem/10799)
+  * [stack, challenge, 에디터](https://www.acmicpc.net/problem/1406)
+  * [queue, challenge, 요세푸스](https://www.acmicpc.net/problem/1158)
+* 다음 이시간 트리, 그래프, 해시
