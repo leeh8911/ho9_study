@@ -60,6 +60,9 @@
     <ClCompile Include="Example\LinkedListProb.cpp">
       <Filter>Example</Filter>
     </ClCompile>
+    <ClCompile Include="Solutions\Prob10828.cpp">
+      <Filter>Solutions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solutions\Prob1929.h">
@@ -94,6 +97,9 @@
     </ClInclude>
     <ClInclude Include="Example\LinkedListProb.h">
       <Filter>Example</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Prob10828.h">
+      <Filter>Solutions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

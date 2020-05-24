@@ -11,6 +11,7 @@
 #include "./Solutions/Prob10814.h"
 #include "./Solutions/Prob10825.h"
 #include "./Solutions/Prob10989.h"
+#include "./Solutions/Prob10828.h"
 
 #include "./SamsungSWTestSolutions/SamsungProb17140.h"
 
@@ -38,7 +39,9 @@ int main(void)
 
 	//BK_Prob_10989();
 
-	linked_list_main();
+	BK_Prob_10828();
+
+	//linked_list_main();
 
 	//Samsung_Prob_17140();
 

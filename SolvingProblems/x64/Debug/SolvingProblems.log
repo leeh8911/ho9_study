@@ -1,4 +1,2 @@
-﻿  LinkedListProb.cpp
-D:\Sangwons_Room\02_개인문서\스터디\흑우스터디\Computer Science\ho9_study\SolvingProblems\Example\LinkedListProb.cpp(11,2): warning C4091: 'typedef ': 변수를 선언하지 않으면 'linked_list' 왼쪽은 무시됩니다.
-D:\Sangwons_Room\02_개인문서\스터디\흑우스터디\Computer Science\ho9_study\SolvingProblems\Example\LinkedListProb.cpp(17,2): warning C4091: 'typedef ': 변수를 선언하지 않으면 'DB_list' 왼쪽은 무시됩니다.
+﻿  Prob10828.cpp
   SolvingProblems.vcxproj -> D:\Sangwons_Room\02_개인문서\스터디\흑우스터디\Computer Science\ho9_study\x64\Debug\SolvingProblems.exe

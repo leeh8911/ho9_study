@@ -145,6 +145,7 @@
     <ClCompile Include="SamsungSWTestSolutions\SamsungProb17140.cpp" />
     <ClCompile Include="Solutions\Prob10814.cpp" />
     <ClCompile Include="Solutions\Prob10825.cpp" />
+    <ClCompile Include="Solutions\Prob10828.cpp" />
     <ClCompile Include="Solutions\Prob10989.cpp" />
     <ClCompile Include="Solutions\Prob11651.cpp" />
     <ClCompile Include="Solutions\Prob1629.cpp" />
@@ -158,6 +159,7 @@
     <ClInclude Include="SamsungSWTestSolutions\SamsungProb17140.h" />
     <ClInclude Include="Solutions\Prob10814.h" />
     <ClInclude Include="Solutions\Prob10825.h" />
+    <ClInclude Include="Solutions\Prob10828.h" />
     <ClInclude Include="Solutions\Prob10989.h" />
     <ClInclude Include="Solutions\Prob11651.h" />
     <ClInclude Include="Solutions\Prob1629.h" />
