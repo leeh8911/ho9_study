@@ -87,7 +87,7 @@
   * Front에서 값이 빠지고, Rear에서 값이 들어온다.
   * 덱(deque, 양방향으로 넣고 빼기가 가능)
 * 문제풀이
-  * [스택, 10828](https://www.acmicpc.net/problem/10828)
+  * [스택, 10828](https://www.acmicpc.net/problem/10828) X : 런타임 에러...
   * [스택, 괄호, 9012](https://www.acmicpc.net/problem/9012)
   * [큐, 10845](https://www.acmicpc.net/problem/10845)
   * [stack, challenge, 쇠막대기](https://www.acmicpc.net/problem/10799)

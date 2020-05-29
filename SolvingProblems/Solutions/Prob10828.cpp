@@ -2,20 +2,13 @@
 #include <vector>
 #include <algorithm>
 #include <cstdio>
+#include <memory.h>
+#include <stdlib.h>
 
 #ifdef TEST_MODE
 #include "Prob10828.h"
 #include <time.h>
 #endif
-
-enum STACK_CMD {
-	STACK_CMD_PUSH,
-	STACK_CMD_SIZE,
-	STACK_CMD_TOP,
-	STACK_CMD_POP,
-	STACK_CMD_EMPTY,
-};
-
 
 typedef struct tNode {
 	int value;
@@ -30,14 +23,17 @@ typedef struct tStack {
 void stack_push(Stack* s, int value)
 {
 	Node* node = (Node*)malloc(sizeof(Node));
-	memset(node, 0, sizeof(Node));
 
-	node->value = value;
-	node->next = s->top;
+	if (node != NULL)
+	{
+		node->value = value;
+		node->next = s->top;
 
-	s->top = node;
-	s->size++;
+		s->top = node;
+		s->size++;
+	}
 };
+
 int stack_pop(Stack* s)
 {
 	int result = 0;
@@ -45,7 +41,7 @@ int stack_pop(Stack* s)
 
 	if (temp == NULL)
 	{
-		result = -1;
+		result = 0;
 	}
 	else
 	{
@@ -57,7 +53,6 @@ int stack_pop(Stack* s)
 		s->size--;
 	}
 
-	printf("%d\n", result);
 	return result;
 
 };
@@ -65,45 +60,18 @@ int stack_size(Stack* s)
 {
 	int result = s->size;
 
-	printf("%d\n", result);
 	return result;
 };
 int stack_empty(Stack* s)
 {
 	int result = s->size > 0 ? 0 : 1;
-	printf("%d\n", result);
 	return result;
 };
 int stack_top(Stack* s)
 {
 	int result = s->top->value;
-	printf("%d\n", result);
 	return result;
 };
-
-void do_command(enum STACK_CMD cmd, Stack* s, int value)
-{
-	switch (cmd)
-	{
-	case(STACK_CMD_PUSH):
-		stack_push(s, value);
-		break;
-	case(STACK_CMD_SIZE):
-		stack_size(s);
-		break;
-	case(STACK_CMD_TOP):
-		stack_top(s);
-		break;
-	case(STACK_CMD_POP):
-		stack_pop(s);
-		break;
-	case(STACK_CMD_EMPTY):
-		stack_empty(s);
-		break;
-	default:
-		break;
-	}
-}
 
 
 #ifdef TEST_MODE
@@ -117,7 +85,12 @@ int main(void)
 	int n = 0;
 
 	Stack *stack = (Stack*)malloc(sizeof(Stack));
-	memset(stack, 0, sizeof(Stack));
+	if (stack != NULL)
+	{
+		memset(stack, 0, sizeof(Stack));
+	}
+	int* result = (int*)malloc(sizeof(int) * n);
+	memset(result, 0, sizeof(int) * n);
 
 
 #ifdef TEST_MODE1
@@ -137,40 +110,62 @@ int main(void)
 	stack_top(stack);
 
 #else
-	scanf("%d", &n);
-	int iter = 0;
-	char input[10];
+	int res = 0;
+	res += scanf("%d", &n);
+	int iter = 0, count = 0;
+	int push_value = 0;
+	char input[256];
+	char input_num[256];
 	while (iter < n)
 	{
-		scanf("%s", input);
+		res += scanf("%s", input);
 
 		if (strcmp(input, "top") == 0)
 		{
-
+			result[count] = stack_top(stack);
+			count++;
 		}
 		else if (strcmp(input, "size") == 0)
 		{
-
+			result[count] = stack_size(stack);
+			count++;
 		}
 		else if (strcmp(input, "empty") == 0)
 		{
-
+			result[count] = stack_empty(stack);
+			count++;
 		}
 		else if (strcmp(input, "pop") == 0)
 		{
-
+			result[count] = stack_pop(stack);
+			count++;
 		}
 		else
 		{
-
+			res += scanf("%s", input_num);
+			push_value = 0;
+			for (int i = 0; i < 256; i++)
+			{
+				if (input_num[i] != 0)
+				{
+					push_value *= 10;
+					push_value += (input_num[i] - '0');
+				}
+				else
+				{
+					break;
+				}
+			}
+			stack_push(stack, push_value);
 		}
-
-
-
 		iter++;
 	}
 #endif
 
+	for (int i = 0; i < count; i++)
+	{
+		printf("%d\n", result[i]);
+	}
 
 	return 0;
 }
