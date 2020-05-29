@@ -153,6 +153,7 @@
     <ClCompile Include="Solutions\Prob2747.cpp" />
     <ClCompile Include="Solutions\Prob2750.cpp" />
     <ClCompile Include="Solutions\Prob2751.cpp" />
+    <ClCompile Include="Solutions\Prob9012.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Example\LinkedListProb.h" />
@@ -167,6 +168,7 @@
     <ClInclude Include="Solutions\Prob2747.h" />
     <ClInclude Include="Solutions\Prob2750.h" />
     <ClInclude Include="Solutions\Prob2751.h" />
+    <ClInclude Include="Solutions\Prob9012.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
