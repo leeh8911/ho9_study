@@ -61,7 +61,6 @@ static void stack_clear(Stack* s)
 {
 	while (stack_pop(s) != 0)
 	{
-
 	}
 }
 
@@ -80,6 +79,17 @@ static int stack_top(Stack* s)
 {
 	int result = s->top->value;
 	return result;
+};
+static void stack_print(Stack* s)
+{
+	Node* temp = s->top;
+	for (int i = 0; i < s->size; i++)
+	{
+
+		printf("%d ", temp->value);
+		temp = temp->next;
+	}
+	printf("\n");
 };
 
 
@@ -102,14 +112,16 @@ int main(void)
 
 #ifdef TEST_MODE
 	n = 6;
-	char input[6][50] = { {"(())())"}, {"(((()())()"}, {"(()())((()))"}, {"((()()(()))(((())))()"}, {"()()()()(()()())()"}, {"(()((())()("} };
+	char input[6][50] = { {")()()("}, {"(((()())()"}, {"(()())((()))"}, {"((()()(()))(((())))()"}, {"()()()()(()()())()"}, {"(()((())()("} };
 #else
 	scanf("%d", &n);
 	char** input = (char**)malloc(sizeof(char*) * n);
 	for (int i = 0; i < n; i++)
 	{
 		input[i] = (char*)malloc(sizeof(char) * 50);
+		scanf("%s", input[i]);
 	}
+
 #endif
 	int* result = (int*)malloc(sizeof(int) * n);
 	if (result != NULL)
@@ -120,10 +132,12 @@ int main(void)
 	{
 		return 1;
 	}
-
+	
+	int wrong_flag = 0, empty_flag = 0;
 	for (int i = 0; i < n; i++)
 	{
 		stack_clear(stack);
+		wrong_flag = 0;
 		for (int j = 0; j < 50; j++)
 		{
 			if (input[i][j] - '(' == 0)
@@ -132,10 +146,10 @@ int main(void)
 			}
 			else if (input[i][j] - ')' == 0)
 			{
-				result[i] = stack_pop(stack);
-				if (result[i] == 0)
+				empty_flag = stack_pop(stack);
+				if (empty_flag == 0)
 				{
-					//TODO : wrong assigned value in stack;
+					wrong_flag = 1;
 					break;
 				}
 			}
@@ -144,7 +158,24 @@ int main(void)
 				break;
 			}
 		}
-		if (stack_empty(stack))
+		if (wrong_flag == 1)
+		{
+			/* do nothing */
+			/* already wrong */
+		}
+		else
+		{
+			if (stack_empty(stack))
+			{
+				/* do nothing */
+				/* correct */
+			}
+			else
+			{
+				wrong_flag = 1;
+			}
+		}
+		if (wrong_flag == 1)
 		{
 			result[i] = 1;
 		}
@@ -156,7 +187,7 @@ int main(void)
 
 	for (int i = 0; i < n; i++)
 	{
-		if (result[i] == 0)
+		if (result[i] == 1)
 		{
 			printf("NO\n");
 		}
