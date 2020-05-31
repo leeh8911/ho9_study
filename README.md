@@ -94,3 +94,25 @@
   * [stack, challenge, 에디터](https://www.acmicpc.net/problem/1406)
   * [queue, challenge, 요세푸스](https://www.acmicpc.net/problem/1158)
 * 다음 이시간 트리, 그래프, 해시
+
+## 5주차 스터디(2020-05-31)
+
+* 트리
+  * 트리는 재귀적인 형태
+  * 대표적으로 이진 트리(루트 노드를 기준으로 2개의 서브 노드로 나뉘어짐)
+  * 레벨(루트 0 ~ 서브로 갈수록 커짐), 높이는 최대 레벨, 꽉찬 경우에는 포화, 왼쪽부터 차곡차곡 채워지면 완전 이진트리
+* 그래프
+  * 깊이 우선 탐색(Depth First Search, DFS), 너비 우선 탐색(Breadth First Search, BFS)
+* 문제 풀이
+  * [1991](https://www.acmicpc.net/problem/1991)
+  * [1967](https://www.acmicpc.net/problem/1967)
+  * [1260](https://www.acmicpc.net/problem/1260)
+  * [10451](https://www.acmicpc.net/problem/10451)
+  * [2252](https://www.acmicpc.net/problem/2252)
+  * [1922](https://www.acmicpc.net/problem/1922)
+  * [1707, 도전](https://www.acmicpc.net/problem/1707)
+  * [1167, 도전](https://www.acmicpc.net/problem/1167)
+  * [2667, 도전](https://www.acmicpc.net/problem/2667)
+  * [4963, 도전](https://www.acmicpc.net/problem/4963)
+  * [2178, 도전](https://www.acmicpc.net/problem/2178)
+  * [1916, 도전](https://www.acmicpc.net/problem/1916)
