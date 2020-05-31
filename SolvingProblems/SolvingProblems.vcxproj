@@ -150,6 +150,7 @@
     <ClCompile Include="Solutions\Prob11651.cpp" />
     <ClCompile Include="Solutions\Prob1629.cpp" />
     <ClCompile Include="Solutions\Prob1929.cpp" />
+    <ClCompile Include="Solutions\Prob1967.cpp" />
     <ClCompile Include="Solutions\Prob1991.cpp" />
     <ClCompile Include="Solutions\Prob2747.cpp" />
     <ClCompile Include="Solutions\Prob2750.cpp" />
@@ -167,6 +168,7 @@
     <ClInclude Include="Solutions\Prob11651.h" />
     <ClInclude Include="Solutions\Prob1629.h" />
     <ClInclude Include="Solutions\Prob1929.h" />
+    <ClInclude Include="Solutions\Prob1967.h" />
     <ClInclude Include="Solutions\Prob1991.h" />
     <ClInclude Include="Solutions\Prob2747.h" />
     <ClInclude Include="Solutions\Prob2750.h" />

@@ -14,6 +14,7 @@
 #include "./Solutions/Prob10828.h"
 #include "./Solutions/Prob9012.h"
 #include "./Solutions/Prob1991.h"
+#include "./Solutions/Prob1967.h"
 
 #include "./SamsungSWTestSolutions/SamsungProb17140.h"
 
@@ -45,7 +46,9 @@ int main(void)
 	
 	//BK_Prob_9012();
 
-	BK_Prob_1991();
+	//BK_Prob_1991(); // O
+
+	BK_Prob_1967();
 
 	//linked_list_main();
 
