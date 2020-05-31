@@ -1,2 +1,6 @@
-﻿  Prob9012.cpp
+﻿  Prob1991.cpp
+D:\Sangwons_Room\02_개인문서\스터디\흑우스터디\Computer Science\ho9_study\SolvingProblems\Solutions\Prob1991.cpp(177,11): warning C4101: 'left' :참조되지 않은 지역 변수입니다.
+D:\Sangwons_Room\02_개인문서\스터디\흑우스터디\Computer Science\ho9_study\SolvingProblems\Solutions\Prob1991.cpp(177,7): warning C4101: 'pa' :참조되지 않은 지역 변수입니다.
+D:\Sangwons_Room\02_개인문서\스터디\흑우스터디\Computer Science\ho9_study\SolvingProblems\Solutions\Prob1991.cpp(177,17): warning C4101: 'right' :참조되지 않은 지역 변수입니다.
+D:\Sangwons_Room\02_개인문서\스터디\흑우스터디\Computer Science\ho9_study\SolvingProblems\Solutions\Prob1991.cpp(105): warning C4715: 'FindData': 모든 제어 경로에서 값을 반환하지는 않습니다.
   SolvingProblems.vcxproj -> D:\Sangwons_Room\02_개인문서\스터디\흑우스터디\Computer Science\ho9_study\x64\Debug\SolvingProblems.exe

@@ -66,6 +66,12 @@
     <ClCompile Include="Solutions\Prob9012.cpp">
       <Filter>Solutions</Filter>
     </ClCompile>
+    <ClCompile Include="Solutions\ProbTemplate.cpp">
+      <Filter>Solutions</Filter>
+    </ClCompile>
+    <ClCompile Include="Solutions\Prob1991.cpp">
+      <Filter>Solutions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solutions\Prob1929.h">
@@ -105,6 +111,12 @@
       <Filter>Solutions</Filter>
     </ClInclude>
     <ClInclude Include="Solutions\Prob9012.h">
+      <Filter>Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\ProbTemplate.h">
+      <Filter>Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Prob1991.h">
       <Filter>Solutions</Filter>
     </ClInclude>
   </ItemGroup>
