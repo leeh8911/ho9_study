@@ -105,7 +105,8 @@
   * 깊이 우선 탐색(Depth First Search, DFS), 너비 우선 탐색(Breadth First Search, BFS)
 * 문제 풀이
   * [1991](https://www.acmicpc.net/problem/1991) : O
-  * [1967](https://www.acmicpc.net/problem/1967)
+  * [1967](https://www.acmicpc.net/problem/1967) : 거리 계산 방식??
+    * 어떤 방법이 있으려나 고민 필요
   * [1260](https://www.acmicpc.net/problem/1260)
   * [10451](https://www.acmicpc.net/problem/10451)
   * [2252](https://www.acmicpc.net/problem/2252)

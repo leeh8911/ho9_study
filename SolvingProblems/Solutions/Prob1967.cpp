@@ -77,37 +77,31 @@ Tree* FindTarget(Tree* tree, int target)
 
 int CalculateDistance(Tree* tree)
 {
-	int left_weight = 0;
-	int right_weight = 0;
-	if (tree->left == NULL)
-	{
-		left_weight = 0;
-	}
-	else
-	{
-		left_weight = tree->left->weight;
-	}
-	if (tree->right == NULL)
-	{
-		right_weight = 0;
-	}
-	else
-	{
-		right_weight = tree->right->weight;
-	}
+	/*
+	최대 거리를 계산
+	모든 End-Node를 찾는다.
+		i-th 노드에 대해서 다음을 반복
+		finder에 i-th노드를 저장
+			반복(visit_count < number_of_end_nodes)
+			(finder의 왼쪽노드가 있고, 방문된적 없으면)
+				finder = finder의 왼쪽노드
+				총거리 += 현재거리
+			(finder의 오른쪽 노드가 있고, 방문된적 없으면)
+				finder = finder의 오른쪽 노드
+				총거리 += 현재거리
+			(finder의 부모가 있고, 방문된적 없으면)
+				finder = finder의 부모 노드
+				총거리 += 현재거리
+			(finder의 부모가 있고, 방문되적 있으면)
+				finder = finder의 부모 노드
+				총거리 -= 현재거리
+			(finder의 왼쪽, 오른쪽 노드가 모두 없으면)
+				finder노드가 j-th노드라면
+				DistMap[i][j] = 총거리
+				visit_count++
+	*/
 
-	if (left_weight == 0 && right_weight == 0)
-	{
-		return 0;
-	}
-	if (left_weight > right_weight)
-	{
-		return left_weight + CalculateDistance(tree->left);
-	}
-	else
-	{
-		return right_weight + CalculateDistance(tree->right);
-	}
+	return 0;
 }
 
 #ifdef TEST_MODE
