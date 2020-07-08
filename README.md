@@ -117,3 +117,9 @@
   * [4963, 도전](https://www.acmicpc.net/problem/4963)
   * [2178, 도전](https://www.acmicpc.net/problem/2178)
   * [1916, 도전](https://www.acmicpc.net/problem/1916)
+
+
+## 과제(oop)
+* 과제 파일 첨부 필요()
+* 객체지향으로 규현
+* int 자료형 만으로 구현해야 함
